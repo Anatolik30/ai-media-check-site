@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Политика конфиденциальности · AI Media Check</title>
+  <meta name="description" content="Какие данные собирает приложение AI Media Check, зачем, как долго хранит и как их удалить.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Политика конфиденциальности</h1>
+    <p class="lead">Приложение AI Media Check (проект Zero). Действует с 17 ноября 2026 года.</p>
+    <nav>
+      <a href="index.html">О приложении</a>
+      <a href="#en">English version</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <p>Коротко: мы собираем только то, без чего приложение не работает, не показываем рекламу,
+        не используем аналитику и трекеры, не продаём и не передаём ваши данные третьим лицам.
+        Удалить свои данные можно в любой момент — напишите на
+        <a href="mailto:supportaimediacheck@gmail.com">supportaimediacheck@gmail.com</a>.</p>
+    </section>
+
+    <h2>1. Кто отвечает за данные</h2>
+    <p>Владелец проекта Zero, который управляет сервером приложения. Связь по всем вопросам о данных:
+      <a href="mailto:supportaimediacheck@gmail.com">supportaimediacheck@gmail.com</a>.</p>
+
+    <h2>2. Какие данные мы получаем и зачем</h2>
+    <h3>Вход через Google</h3>
+    <p>Когда вы входите, Google передаёт нам ваш адрес электронной почты и имя аккаунта. Мы используем их,
+      чтобы владелец мог одобрить или закрыть доступ, и чтобы узнавать вас при следующих входах.
+      Пароль от Google мы не получаем и не видим.</p>
+    <p>На сервере хранятся: адрес, имя, статус доступа (ожидает, одобрен, закрыт), время запроса, решения
+      и последнего входа, а также сессии входа — тип устройства («Android»), время создания и последнего
+      использования. Сам токен сессии хранится в защищённом хранилище телефона, а на сервере — только
+      его необратимый хеш.</p>
+
+    <h3>Файлы, которые вы отправляете на проверку</h3>
+    <p>Видео или аудио передаётся на сервер только для проверки моделями. Файл удаляется сразу после
+      проверки, результат хранится в памяти сервера не дольше 60 минут, чтобы приложение могло его
+      получить. Мы не используем эти файлы для обучения и никому их не передаём.</p>
+    <p>История проверок хранится только на вашем телефоне. Резервное копирование данных приложения
+      отключено, поэтому история не попадает в облачные копии.</p>
+
+    <h3>Файлы, которые вы добавляете в обучение («Обучить модель»)</h3>
+    <p>Эта функция доступна участникам проекта и только после вашего согласия в приложении. Файлы
+      хранятся вместе с выбранной вами разметкой (настоящее или создано ИИ, генератор) и используются
+      только для обучения и проверки моделей проекта Zero. Они не публикуются и не передаются третьим
+      лицам. В наборе данных файлы связаны с вами через идентификатор, вычисленный из адреса почты;
+      сам адрес и имя хранятся лишь до переноса файла в набор данных.</p>
+    <p>Голос и лицо — персональные данные. Присылайте только свои записи или записи, на которые у вас
+      есть согласие людей в кадре и в записи.</p>
+
+    <h3>Технические данные</h3>
+    <p>Для защиты от злоупотреблений сервер учитывает частоту запросов и записывает в служебный журнал
+      адреса почты при входе и IP-адреса отклонённых запросов. Журнал не используется ни для чего,
+      кроме безопасности и устранения неполадок.</p>
+
+    <h2>3. Кто ещё участвует в обработке</h2>
+    <ul>
+      <li><strong>Google</strong> — проверяет вход через аккаунт Google
+        (<a href="https://policies.google.com/privacy">политика Google</a>).</li>
+      <li><strong>Cloudflare</strong> — передаёт трафик между приложением и сервером по защищённому
+        соединению (<a href="https://www.cloudflare.com/privacypolicy/">политика Cloudflare</a>).</li>
+    </ul>
+    <p>Других получателей нет: ни рекламы, ни аналитики, ни продажи данных.</p>
+
+    <h2>4. Сколько мы храним</h2>
+    <ul>
+      <li>Запись о пользователе — пока у вас есть доступ или пока вы не попросите её удалить.
+        Неодобренные запросы со временем удаляются.</li>
+      <li>Сессия входа — 30 дней с последнего использования; выход в приложении завершает её сразу.</li>
+      <li>Файлы на проверку — удаляются сразу после проверки, результат — через 60 минут.</li>
+      <li>Файлы в обучении — пока используются для обучения моделей или пока вы не попросите их удалить.</li>
+    </ul>
+
+    <h2>5. Защита</h2>
+    <p>Соединение только по HTTPS. Доступ к серверу — только одобренным пользователям. Токены сессий на
+      сервере хранятся в виде хешей, база данных закрыта от других пользователей компьютера, сервер
+      работает в изолированной среде.</p>
+
+    <h2>6. Ваши права и удаление данных</h2>
+    <p>Вы можете в любой момент:</p>
+    <ul>
+      <li>выйти из приложения — сессия на сервере завершится, история проверок удалится с телефона;</li>
+      <li>попросить показать, исправить или удалить данные о вас, включая файлы, добавленные в обучение, —
+        напишите на <a href="mailto:supportaimediacheck@gmail.com">supportaimediacheck@gmail.com</a> с адреса,
+        которым входите. Мы ответим и удалим данные в разумный срок, не позже 30 дней;</li>
+      <li>отозвать доступ приложения к аккаунту Google в настройках своего аккаунта Google.</li>
+    </ul>
+
+    <h2>7. Дети</h2>
+    <p>Приложение не предназначено для детей младше 16 лет, и мы сознательно не собираем их данные.</p>
+
+    <h2>8. Изменения</h2>
+    <p>Если политика изменится, новая версия появится на этой странице с новой датой.</p>
+
+    <hr>
+
+    <section id="en" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="lead">AI Media Check app (Zero project). Effective November 17, 2026.</p>
+
+      <div class="card">
+        <p>In short: we collect only what the app needs to work, show no ads, use no analytics or
+          trackers, and never sell or share your data. You can have your data deleted at any time —
+          write to <a href="mailto:supportaimediacheck@gmail.com">supportaimediacheck@gmail.com</a>.</p>
+      </div>
+
+      <h2>1. Who is responsible</h2>
+      <p>The owner of the Zero project, who runs the app's server. Contact for all data questions:
+        <a href="mailto:supportaimediacheck@gmail.com">supportaimediacheck@gmail.com</a>.</p>
+
+      <h2>2. What we collect and why</h2>
+      <h3>Sign-in with Google</h3>
+      <p>When you sign in, Google gives us your email address and account name. We use them so the owner
+        can approve or revoke access and to recognize you on later sign-ins. We never receive your Google
+        password.</p>
+      <p>The server stores your email, name, access status (pending, approved, blocked), the time of the
+        request, decision and last sign-in, and your sign-in sessions: device type ("Android"), creation
+        and last-use time. The session token itself is kept in the phone's secure storage; the server
+        keeps only its irreversible hash.</p>
+
+      <h3>Files you send for checking</h3>
+      <p>A video or audio file is sent to the server only to be checked by the models. The file is
+        deleted right after the check; the result is kept in server memory for at most 60 minutes so the
+        app can fetch it. These files are not used for training and are not shared.</p>
+      <p>Your check history is stored only on your phone. App data backup is disabled, so the history
+        does not go to cloud backups.</p>
+
+      <h3>Files you add for training ("Train the model")</h3>
+      <p>This feature is available to project participants and only after you agree to it in the app.
+        Files are stored with the labels you choose (real or AI-generated, generator) and are used only to
+        train and evaluate the Zero project's models. They are not published or shared. In the dataset,
+        files are linked to you by an identifier derived from your email address; the address and name
+        themselves are kept only until the file is moved into the dataset.</p>
+      <p>Voices and faces are personal data. Send only your own recordings or recordings for which you
+        have the consent of the people in them.</p>
+
+      <h3>Technical data</h3>
+      <p>To prevent abuse, the server counts request rates and writes sign-in email addresses and the IP
+        addresses of rejected requests to a service log. The log is used only for security and
+        troubleshooting.</p>
+
+      <h2>3. Who else processes data</h2>
+      <ul>
+        <li><strong>Google</strong> — verifies Google sign-in
+          (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</li>
+        <li><strong>Cloudflare</strong> — carries traffic between the app and the server over an
+          encrypted connection (<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>).</li>
+      </ul>
+      <p>There are no other recipients: no advertising, no analytics, no sale of data.</p>
+
+      <h2>4. How long we keep data</h2>
+      <ul>
+        <li>Your user record — while you have access or until you ask us to delete it. Unapproved
+          requests are removed over time.</li>
+        <li>Sign-in sessions — 30 days from last use; signing out in the app ends the session at once.</li>
+        <li>Files sent for checking — deleted right after the check; results after 60 minutes.</li>
+        <li>Training files — while they are used to train the models or until you ask us to delete them.</li>
+      </ul>
+
+      <h2>5. Security</h2>
+      <p>HTTPS only. Server access only for approved users. Session tokens are stored on the server as
+        hashes, the database is closed to other users of the computer, and the server runs in an
+        isolated environment.</p>
+
+      <h2>6. Your rights and data deletion</h2>
+      <ul>
+        <li>Sign out in the app — the server session ends and the check history is deleted from the phone.</li>
+        <li>Ask us to show, correct or delete your data, including files added for training — write to
+          <a href="mailto:supportaimediacheck@gmail.com">supportaimediacheck@gmail.com</a> from the address you sign in
+          with. We will reply and delete the data within a reasonable time, no later than 30 days.</li>
+        <li>Revoke the app's access to your Google account in your Google account settings.</li>
+      </ul>
+
+      <h2>7. Children</h2>
+      <p>The app is not intended for children under 16, and we do not knowingly collect their data.</p>
+
+      <h2>8. Changes</h2>
+      <p>If this policy changes, the new version will be published on this page with a new date.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted">AI Media Check · Zero · <a href="index.html">О приложении / About</a></p>
+  </footer>
+</body>
+</html>
